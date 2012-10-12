@@ -27,8 +27,6 @@ namespace Libs\Core;
             return self::$core;
         }
 
-    
-
 }
 
 ?>

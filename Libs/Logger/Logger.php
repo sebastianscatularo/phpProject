@@ -25,7 +25,7 @@ namespace Logger {
             
         }
 
-        public static function getLogger() {
+        public static function Logger() {
             if (self::$instance === null)
                 self::$instance = new self();
             return self::$instance;

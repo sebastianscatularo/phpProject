@@ -9,7 +9,7 @@
  *
  * @author sebastian
  */
-namespace Libs\Core;
+namespace Libs\WebService;
 
 interface WebService {
     function GET();

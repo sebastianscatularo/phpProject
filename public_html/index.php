@@ -12,7 +12,7 @@ class Loader {
         
     }
 
-    public function getLoader() {
+    public static function Loader() {
         if (self::$instance == null)
             self::$instance = new self();
         return self::$instance;
@@ -45,9 +45,13 @@ class Loader {
 use Libs\Core\Core;
 
 try {
-    $loader = Loader::getLoader();    
+    $loader = Loader::Loader();    
     $core = Core::Core();
+    $core->algo();
+    echo $core;
 } catch (Exception $e) {
+    echo $e->getMessage();
+    echo "<br>";
     echo $e->getTraceAsString();
 }
 
