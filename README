@@ -1,0 +1,9 @@
+Router:
+    El router se encarga de crear rutas / validar / almacenar rutas
+    y a partir de ellas ejecutar la accion asociada.
+
+
+
+Config:
+    Config()->setupComponent('componetName');
+    carga el componente cuyo nombre es "componentName"
