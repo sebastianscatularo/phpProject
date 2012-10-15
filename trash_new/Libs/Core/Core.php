@@ -21,16 +21,12 @@ class Core {
             self::$instance = new self();
         }
         return self::$instance;
-    }
-    
-    public function algo()
-    {
-        $w = new webRequest();
-        echo $w;
-        $r = Router::Router();
-        echo $r->hola;        
-    }
+    }       
 
+    public function exec(){
+        $router = Router::Router();
+        $router->dispath();
+    }
 
     public function __toString() {
         return "";

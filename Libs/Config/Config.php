@@ -6,16 +6,15 @@
  */
 
 /**
+ * Description of Config
  *
  * @author sebastian
  */
-namespace Libs\WebService;
 
-interface WebService {
-    function GET();
-    function PUT();
-    function POST();
-    function DELETE();
+namespace Libs\Config;
+
+class Config {
+    //put your code here
 }
 
 ?>

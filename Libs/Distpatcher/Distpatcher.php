@@ -6,29 +6,32 @@
  */
 
 /**
- * Description of Router
+ * Description of Distpatcher
  *
  * @author sebastian
  */
 
-namespace Libs\Router;
+namespace Libs\Distpatcher;
 
-class Router {
+use Libs\Router\Router as Router;
+
+class Distpatcher {
 
     private static $instance;
+    private $router;
 
     private function __construct() {
-        
+        $this->router = Router::Router();
     }
 
-    private function __clone() {
-        
-    }
-
-    public static function Router() {
+    public static function Distpatcher() {
         if (self::$instance == NULL)
             self::$instance = new self();
         return self::$instance;
+    }
+
+    public function getApp() {
+        
     }
 
 }
