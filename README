@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Router:
     El router se encarga de crear rutas / validar / almacenar rutas
     y a partir de ellas ejecutar la accion asociada.
@@ -6,4 +7,14 @@ Router:
 
 Config:
     Config()->setupComponent('componetName');
+=======
+Router:
+    El router se encarga de crear rutas / validar / almacenar rutas
+    y a partir de ellas ejecutar la accion asociada.
+
+
+
+Config:
+    Config()->setupComponent('componetName');
+>>>>>>> 3d0df4a9b88296ecd0a0500a5095bf695b0c31bd
     carga el componente cuyo nombre es "componentName"

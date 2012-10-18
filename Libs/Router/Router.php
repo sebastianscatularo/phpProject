@@ -13,6 +13,7 @@
 
 namespace Libs\Router;
 
+<<<<<<< HEAD
 use Libs\Router\Route as Route;
 use Libs\Http\Request as Request;
 use Exception as Exception;
@@ -23,6 +24,11 @@ class Router {
     private static $instance;
     private $basePath = "";
     private $mapRoute = array();
+=======
+class Router {
+
+    private static $instance;
+>>>>>>> 3d0df4a9b88296ecd0a0500a5095bf695b0c31bd
 
     private function __construct() {
         
@@ -38,6 +44,7 @@ class Router {
         return self::$instance;
     }
 
+<<<<<<< HEAD
     public function MapRoute($routeURL, $target, array $params = array()) {
         $route = new Route();
         $route->setURI($this->basePath . $routeURL);
@@ -152,6 +159,8 @@ class Router {
           var_dump($route); */
     }
 
+=======
+>>>>>>> 3d0df4a9b88296ecd0a0500a5095bf695b0c31bd
 }
 
 ?>

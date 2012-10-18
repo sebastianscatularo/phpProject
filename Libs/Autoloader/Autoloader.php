@@ -2,8 +2,11 @@
 
 namespace Libs\Autoloader;
 
+<<<<<<< HEAD
 use \Exception as Exception;
 
+=======
+>>>>>>> 3d0df4a9b88296ecd0a0500a5095bf695b0c31bd
 class Autoloader {
 
     private static $instance;
@@ -32,8 +35,12 @@ class Autoloader {
     private function findClass($className) {
         $separator = DIRECTORY_SEPARATOR;
         for ($i = 0; $i < 5; $i++) {
+<<<<<<< HEAD
             //$filePath = dirname($this->getValue('SCRIPT_FILENAME')) . $separator . $className;
             $filePath = $this->getRootPath() . $separator . $className;
+=======
+            $filePath = dirname($_SERVER['SCRIPT_FILENAME']) . $separator . $className;
+>>>>>>> 3d0df4a9b88296ecd0a0500a5095bf695b0c31bd
             if (is_readable($filePath))
                 return $filePath;
             else
@@ -41,6 +48,7 @@ class Autoloader {
         }
     }
 
+<<<<<<< HEAD
     private function getRootPath() {
         if (key_exists('SCRIPT_FILENAME', $_SERVER))
             return dirname($_SERVER['SCRIPT_FILENAME']);
@@ -51,6 +59,11 @@ class Autoloader {
         spl_autoload_register($loader);
     }
 
+=======
+    private function registerLoader($loader) {
+        spl_autoload_register($loader);
+    }
+>>>>>>> 3d0df4a9b88296ecd0a0500a5095bf695b0c31bd
 }
 
 ?>

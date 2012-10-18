@@ -20,4 +20,8 @@ $scanPath    = dirname($storagePath);
 
 $scanner     = new autoload_TokenizerFileScanner();
 $autoLoader  = new autoload_AutoLoader();
+<<<<<<< HEAD
+=======
+PHP_AUTO
+>>>>>>> 3d0df4a9b88296ecd0a0500a5095bf695b0c31bd
 $autoLoader->scanAndStore($scanPath, $scanner, $storage);

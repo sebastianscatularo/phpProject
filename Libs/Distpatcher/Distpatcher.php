@@ -14,8 +14,11 @@
 namespace Libs\Distpatcher;
 
 use Libs\Router\Router as Router;
+<<<<<<< HEAD
 use Libs\Http\Request as Request;
 //use Libs\MVC\MVCDistpatcher as MVCDistpatcher;
+=======
+>>>>>>> 3d0df4a9b88296ecd0a0500a5095bf695b0c31bd
 
 class Distpatcher {
 
@@ -33,6 +36,7 @@ class Distpatcher {
     }
 
     public function getApp() {
+<<<<<<< HEAD
         /*
          * Si el tipo de contenido a retornar es text/html, se crea una nueva 
          * aplicacion del tipo MVCApplication
@@ -47,6 +51,9 @@ class Distpatcher {
         var_dump(Router::Router());
         var_dump(Router::Router()->matchCurrentRequest()->getParameters());
 
+=======
+        
+>>>>>>> 3d0df4a9b88296ecd0a0500a5095bf695b0c31bd
     }
 
 }
