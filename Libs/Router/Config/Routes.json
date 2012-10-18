@@ -1,0 +1,28 @@
+{
+    "host": "local.com",
+    "routes":
+    {
+        "/{:app}/{:controller}/{:action}":
+        {
+            "method" : "",
+            "app" : "Blog",
+            "controller" : "Welcome",
+            "action" : "index"
+        },
+        "/" : 
+        {
+            "method" : "GET",
+            "app" : "Blog",
+            "controller": "Welcome",
+            "action": "index"
+        },
+        "{:route}" :
+        {
+            "method" : "{:method}",
+            "app" : "{:app}",
+            "controller" : "{:controller}",
+            "action" : "{:action}"
+        }
+        
+    }
+}

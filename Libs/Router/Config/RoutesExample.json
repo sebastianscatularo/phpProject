@@ -1,0 +1,28 @@
+{
+    "host": "localhost",
+    "routes":
+    {
+        "route" : 
+        {
+            "method" : "HTTP_METHOD",
+            "controller" : "ControllerName",
+            "action" : "ActionMethod"
+        },
+//Machea la ruta {:route} con cualquier methodo, con el controller name
+//de la url http://www.localhost.com/controllerName/actionName/parameters
+//        
+//        
+//        
+//        
+//        
+//        
+//        
+        "{:route}" :
+        {
+            "method" : "{:method}",
+            "controller" : "{:controller}",
+            "action" : "{:action}"
+        }        
+    }
+    
+}
